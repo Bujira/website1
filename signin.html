@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logo.png">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="topnav" id="dropDownClick">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="topnav-right"><a href="./signup.html">Sign Up</a></li>
+            <li class="topnav-right"><a href="./signin.html">Sign In</a></li>
+            <li class="dropDownIcon"><a href="javascript:void(0)" onclick="dropDownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <p>Welcome to the SIGN IN page!</p>
+
+    <div>
+        <form>
+            <input type="text" placeholder="Username">
+            <br>
+            <br>
+            <input type="text" placeholder="Password">
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <script>
+        function dropDownMenu() {
+            var x = document.getElementById("dropDownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
